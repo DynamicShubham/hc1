@@ -10,7 +10,7 @@ function showItemForm() {
 }
 
 let receiptItems = [];
-const shopName = "Laxmi Decoraters and Sound Service"; // Replace 'Your Shop Name' with your shop's name
+const shopName = "Harshada Collection"; // Replace 'Your Shop Name' with your shop's name
 
 function addItem() {
   const itemName = document.getElementById('itemName').value;
