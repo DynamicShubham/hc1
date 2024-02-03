@@ -64,9 +64,9 @@ function generatePDF() {
   var cadd = document.getElementById("customerAddress").value
   var amt = document.getElementById("received").value
   
-  const image = `<img src="android-chrome-512x512.png" alt="logo"/>`;
+  // const image = `<img src="android-chrome-512x512.png" alt="logo"/>`;
   const shopHeader = `<h1 style="text-align: center; font-size: 36px; margin-bottom: 10px; color: black; text-shadow: 2px 2px 4px #000;">${shopName}</h1>`;
-  const shopDetails = `<p><strong>Address:</strong> B/3 Mahesh Nagar Near Hanuman Mandir Nalasopara East -401303<br><strong>Owner:</strong> SURESH NARAYAN KORGAONKAR<br><strong>Phone Number:</strong> 9892023888</p>`;
+  // const shopDetails = `<p><strong>Address:</strong> B/3 Mahesh Nagar Near Hanuman Mandir Nalasopara East -401303<br><strong>Owner:</strong> SURESH NARAYAN KORGAONKAR<br><strong>Phone Number:</strong> 9892023888</p>`;
   const currentDate = new Date().toLocaleDateString();
   const customerDetails = `
   <div style="display:flex;justify-content:left; margin:5px 10px;flex-wrap:wrap;gap:30px">
@@ -86,7 +86,7 @@ function generatePDF() {
     table { width: 100%; border-collapse: collapse; }
     th, td { padding: 10px; border: 1px solid #000; }
     th { background-color: #f2f2f2; }
-  </style></head><body><div>${image} ${shopHeader}</div>${shopDetails} ${dateDiv} ${customerDetails} ${itemsTable} ${total} ${recamt} ${balance}</body></html>`;
+  </style></head><body><div> ${shopHeader}</div>${dateDiv} ${customerDetails} ${itemsTable} ${total} ${recamt} ${balance}</body></html>`;
    
   const printWindow = window.open('', '_blank');
   printWindow.document.open();
