@@ -87,5 +87,5 @@ function generatePDF() {
   printWindow.document.open();
   printWindow.document.write(content);
   printWindow.document.close();
-  printWindow.download();
+  printWindow.print();
 }
