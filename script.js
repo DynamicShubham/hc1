@@ -1,12 +1,14 @@
 
 function showItemForm() {
+
+  alert("Your Basic Plan has ended on 31/5/2025")
   // Hide the customer details section
-  const customerDetails = document.getElementById('customerDetails');
-  customerDetails.style.display = 'none';
+  // const customerDetails = document.getElementById('customerDetails');
+  // customerDetails.style.display = 'none';
   
-  // Show the item details section
-  const itemDetails = document.getElementById('itemDetails');
-  itemDetails.style.display = 'block';
+  // // Show the item details section
+  // const itemDetails = document.getElementById('itemDetails');
+  // itemDetails.style.display = 'block';
 }
 
 let receiptItems = [];
